@@ -25,10 +25,30 @@ h1 {
   text-align: center;
 }
 
+#description {
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+#inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 #inputNumber {
   width: 300px;
   padding: 10px;
   margin: 20px auto;
+  margin-right: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
@@ -37,6 +57,7 @@ h1 {
 #generateButton {
   padding: 10px 20px;
   margin: 20px auto;
+  margin-left: 10px;
   border: none;
   border-radius: 5px;
   background-color: #007bff;
@@ -135,14 +156,24 @@ footer {
     width: 95%;
   }
 
+  #description {
+    width: 95%;
+  }
+
+  #inputContainer {
+    flex-direction: column;
+  }
+
   #inputNumber {
     width: 100%;
     display: block;
+    margin: 10px auto;
   }
 
   #generateButton {
     width: 100%;
     display: block;
+    margin: 10px auto;
   }
 }
 

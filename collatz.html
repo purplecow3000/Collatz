@@ -9,7 +9,7 @@
   <body>
     <div class="input">
       <h1>Collatz Conjecture</h1>
-      <p>
+      <p id="description">
         The Collatz Conjecture is a mathematical problem that involves a
         sequence of numbers. Starting with any positive integer, if the number
         is even, divide it by 2. If it's odd, multiply it by 3 and add 1. The
@@ -18,14 +18,17 @@
         Lothar Collatz, who proposed the problem in 1937. The problem remains
         unsolved to this day.
       </p>
-      <input
-        type="number"
-        id="inputNumber"
-        placeholder="Enter a number from 1 to 1000"
-        min="1"
-        max="1000"
-      />
-      <button id="generateButton">Generate Sequence</button>
+
+      <div id="inputContainer">
+        <input
+          type="number"
+          id="inputNumber"
+          placeholder="Enter a number from 1 to 1000"
+          min="1"
+          max="1000"
+        />
+        <button id="generateButton">Generate Sequence</button>
+      </div>
     </div>
     <div id="result"></div>
     <footer>
